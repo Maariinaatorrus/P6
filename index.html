@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6_gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    :root{
+    --crema: #FFFDEC;
+    --cremaoscuro: #F9F7E6;
+    --cremamasoscuro: #EFEEE0;
+    --verdeclaro: #D4C42E;
+    --verdemedio: #347C67;
+    --verdeoscuro: #084936;
+    --titular: 'Josefin Sans', sans-serif;
+    --autor: 'Josefin Sans', sans-serif;
+    --descripcion: 'EB Garamond', serif;
+}
+
+img{
+        width: 100%;}
+
+h1{
+    padding-top: 1em 0;
+    font-family: var(--titular);
+    font-size: 0.6em;
+    font-weight: 300;
+    color: var(--verdemedio);
+    padding: 1em 0 0 0;
+    }
+
+h2{
+    font-family: var(--autor);
+    color: var(--verdeclaro);
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 1em 0 0 0;} 
+
+p{
+    font-family: var(--descripcion);
+    color: var(--verdeoscuro);
+    font-size: 0.6em;
+    font-weight: 400;}
+    
+.gallery{
+    background-color: var(--crema);
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;}
+
+.card{
+    transition: flex-grow 1s;
+    flex-basis: 23%;
+    background-color: var(--cremaoscuro);
+    border: 0.2em solid var(--cremaoscuro);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;}
+
+.card:nth-child(2){
+    flex-grow: 1;}
+
+.card:nth-child(4){
+    flex-grow: 1;}
+
+.card_img{
+    width: 100%;
+    height: 300px;}
+
+.card_img img{
+    object-fit: cover;
+    height: 100%;}
+
+.card:nth-child(3){
+    object-position: top;
+}
+
+.card:nth-child(3){object-position: top;}
+
+.card:hover{
+    box-shadow: 0.2em 0.2em 0.2em var(--cremamasoscuro);
+    flex-grow: 1;
+}
+
+    </style>
+</head>
+<body>
+    <main>
+
+
+    <div class="gallery">    
+        <div class="card">
+        <figure class="card_img">
+            <img src="img/3 La joven de la perla.jpg" alt="">
+        </figure>
+        <header>
+<h1>LA JOVEN DE LA PERLA</h1>
+<h2>MJohannes Vermeer. 1665 y 1667</h2>
+<p>La joven de la perla, también conocida como Muchacha con turbante, es una de las obras maestras del 
+    pintor neerlandés Johannes Vermeer realizada entre 1665 y 1667. 
+    Como el nombre indica, utiliza un pendiente de perla como punto focal. 
+    La pintura se encuentra actualmente en el museo Mauritshuis de La Haya.</p>
+        </header>
+    </div>
+
+
+<div class="card">
+        <figure class="card_img">
+            <img src="img/1 La creacion de adam.jpg" alt="">
+        </figure>
+        <header>
+<h1>LA CREACION DE ADAM</h1>
+<h2> Miguel Ángel. 1511</h2>
+<p>La creación de Adán es un fresco en la bóveda de la Capilla Sixtina, pintado por Miguel Ángel alrededor del año 1511. 
+    Ilustra uno de los nueve episodios del Génesis representados allí por el artista toscano,​
+    en el cual Dios le da vida a Adán, el primer hombre.</p>
+        </header>
+    </div>
+
+
+    <div class="card">
+        <figure class="card_img">
+            <img src="img/5 El beso.jpg" alt="">
+        </figure>
+        <header>
+<h1>EL BESO</h1>
+<h2> Gustav Klimt. 1907-1908</h2>
+<p>El beso es una obra del pintor austríaco Gustav Klimt y probablemente su obra más conocida. 
+    Es un óleo con laminillas de oro y estaño sobre lienzo de 180 x 180 centímetros, realizado entre 1907-08.
+    ​Esta obra, que sigue los cánones del Simbolismo, es una tela con decoraciones y mosaicos sobre un fondo dorado.</p>
+        </header>
+    </div>
+
+
+<div class="card">
+    <figure class="card_img">
+        <img src="img/4 El nacimiento de venus.jpg" alt="">
+    </figure>
+    <header>
+<h1>EL NACIMIENTO DE VENUS</h1>
+<h2>Sandro Botticelli. 1485–1486</h2>
+<p>El beso es una obra del pintor austríaco Gustav Klimt y probablemente su obra más conocida. 
+Es un óleo con laminillas de oro y estaño sobre lienzo de 180 x 180 centímetros, realizado entre 1907-08.
+​Esta obra, que sigue los cánones del Simbolismo, es una tela con decoraciones y mosaicos sobre un fondo dorado.</p>
+    </header>
+</div>
+
+
+<div class="card">
+    <figure class="card_img">
+        <img src="img/6 Las meninas.jpg" alt="">
+    </figure>
+    <header>
+<h1>LAS MENINAS</h1>
+<h2>Velázquez. 1656</h2>
+<p>Las meninas o La familia de Felipe IV se considera la obra maestra del pintor del Siglo de Oro español Diego Velázquez.
+     Acabado en 1656, según Antonio Palomino, fecha unánimemente aceptada por la crítica, 
+     corresponde al último periodo estilístico del artista, el de plena madurez.</p>
+    </header>
+</div>
+
+
+<div class="card">
+    <figure class="card_img">
+        <img src="img/2 La noche estrellada.jpg" alt="">
+    </figure>
+    <header>
+<h1>LA NOCHE ESTRELLADA</h1>
+<h2>Van Gogh, 1889</h2>
+<p>La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh. 
+    Pintado en junio de 1889, representa la vista desde la ventana orientada al este de su habitación de 
+    asilo en Saint-Rémy-de-Provence, justo antes del amanecer, con la adición de un pueblo imaginario.</p>
+    </header>
+</div>
+    </div>
+    </main>
+</body>
+</html>
